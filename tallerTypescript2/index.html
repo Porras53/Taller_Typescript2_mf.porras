@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />    
+</head>
+
+<body>
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Manuel Felipe Porras Tascón</h1>
+
+                <img class="img-fluid max-width: 100% height: auto" src="https://scontent.fbog3-1.fna.fbcdn.net/v/t1.0-9/s960x960/48356478_2154447174576454_2169736912942661632_o.jpg?_nc_cat=104&_nc_sid=8024bb&_nc_ohc=7rWmPjbgHWgAX905bn5&_nc_ht=scontent.fbog3-1.fna&tp=7&oh=2835d88952a99b5c48b21c7be452f3a5&oe=5FB1AAFC"
+                    height="300px" width="300px" alt="Avatar">
+                    <br>
+                    <br>
+                <div class="card">
+                <h2>Datos Personales</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="students">
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <h2>Cursos Actuales</h2>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                      </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                      </div>
+                    </div>
+                </form>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                      <div class="col">
+                          <input type="number" class="form-control" id="search-box1" placeholder="Ingresar Minimo Creditos">
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" id="search-box2" placeholder="Ingresar Maximo Creditos">
+                    </div>
+                      <div class="col">
+                          <button type="button" id="button-filterByCredits" class="btn btn-success">Buscar rango de créditos</button>
+                      </div>
+                    </div>
+                </form>
+                <table class="table">
+                    <thead class="thead-dark" > 
+                       <tr>
+                          <th>Curso</th>
+                          <th>Profesor</th>
+                          <th>Créditos</th>
+                       </tr>
+                    </thead>
+                    <tbody id="courses">
+                    </tbody>
+                </table>
+                <div class="row justify-content-end">
+                    <h5 class="col-4"><strong>Total Créditos:</strong></h5>
+                    <h5 class="col-4" id="total-credits"><strong></strong></h5>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
